@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bienvenido: {{ usuario }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="boton-toolbar" (click)="info()"><ion-icon slot="icon-only" name="person-outline"></ion-icon></ion-button>
+      <ion-button class="boton-toolbar" (click)="logout()"><ion-icon slot="icon-only" name="log-out-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img src="../../../assets/img/Valpo.jpg" />
+    <ion-card-header>
+      <ion-card-title>¡Bienvenidos a nuestra App!</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      ¡Estamos muy felices de que formen parte de nuestra App, Bienvenidos!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../../assets/img/Inauguracion-Duoc.jpg" />
+    <ion-card-header>
+      <ion-card-title>Inaguración App</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Los invitamos a conocer nuestra App de DUOC UC.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

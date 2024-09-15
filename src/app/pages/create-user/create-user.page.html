@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content padding>
+  <ion-item lines="none">
+    <ion-input [(ngModel)]="reg_name" label="Nombre Completo" labelPlacement="floating" placeholder="Nombre Completo"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-input [(ngModel)]="reg_user" label="Nombre de Usuario" labelPlacement="floating" placeholder="Nombre de Usuario"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-input [(ngModel)]="reg_pass" type="password" label="Contraseña" labelPlacement="floating" placeholder="Contraseña"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="register()">Registrar Usuario</ion-button>
+</ion-content>

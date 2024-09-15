@@ -1,0 +1,66 @@
+// ESTE ESTILO PERMITE PONER UNA IMAGEN DE FONDO
+ion-content {
+  --background: url(../../../assets/img/header-mobile.jpg) 0 0/100% 100%
+    no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+
+  ion-item {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 16px;
+    border: 2px solid #7cd8d8;
+    border-radius: 0px;
+
+    ion-input {
+      --padding-start: 16px;
+      --padding-end: 16px;
+      --placeholder-color: #e0e0e0;
+      --color: #2a00a6;
+      --background: transparent;
+      font-family: "Segoe UI", sans-serif;
+      border: none;
+    }
+  }
+
+  ion-button {
+    --background: linear-gradient(to right, #ecb501, #ec8a0a);
+    --color: #ffffff;
+    margin-top: 10px;
+    height: 56px;
+    border: 2px solid #bcbcbc;
+    border-radius: 6px;
+    font-family: "Segoe UI", sans-serif;
+  }
+}
+
+ion-header {
+  --background: #3880ff;
+  --color: #fff;
+}
+
+ion-toolbar {
+  --background: linear-gradient(to right, #ecb501, #ec8a0a);
+  --color: #ffffff;
+  border: 1px solid #bcbcbc;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+ion-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ion-buttons {
+  ion-button {
+    --background: linear-gradient(to right, #ecb501, #ec8a0a);
+    --color: #ffffff;
+
+    ion-icon {
+      font-size: 1.2rem;
+    }
+  }
+}

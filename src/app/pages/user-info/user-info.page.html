@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Información de Usuario</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="boton-toolbar" (click)="back()"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-item lines="none">
+    <ion-label position="floating">Nombre Completo</ion-label>
+    <ion-input [(ngModel)]="nombreCompleto" readonly></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="floating">Nombre de Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario" readonly></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="floating">Contraseña Actual</ion-label>
+    <ion-input [(ngModel)]="contrasenaActual" type="password"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="floating">Nueva Contraseña</ion-label>
+    <ion-input [(ngModel)]="nuevaContrasena" type="password"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label position="floating">Confirmar Nueva Contraseña</ion-label>
+    <ion-input [(ngModel)]="confirmarContrasena" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="saveChanges()">Guardar Cambios</ion-button>
+</ion-content>
